@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head> <!--RECHERCHE: barre de navigation navbar
+												listes: listgroup
+												panel	-->
+    <meta charset="utf-8">
+		<title>Formulaire de connexion</title>
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	</head>
+	<body>
+		<form class="col-lg-6" class="form-horizontal" Enctype="Multipart/Form-data">
+			<legend> </legend>
+			<div class="form-group has-success" >
+				<label for="nom"> Nom </label>
+				<div class="input-group">
+					<input class="form-control" type="text"  name="nom" id="nom" placeholder="votre nom svp!"> 
+					<span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+				</div> 
+			</div>
+			<div class="form-group has-error">
+				<label class="control-label"> Prenoms </label>
+				<input class="form-control" type="text"  name="prenoms" placeholder="votre prenom svp!"> 
+			</div> 
+			<div class="form-group">
+				<label> Age </label>
+				<input class="form-control" type="text"  name="age" placeholder="votre Age svp!"> 
+			</div>
+			<div class="form-group">
+				<label> Mot de passe </label>
+				<input class="form-control" type="password" name="mot-de-passe"> 
+			</div>
+			<label> Sexe :</label>
+			<input type="radio" name="sexe" checked="checked"> Femme
+			<input type="radio" name="sexe"> Homme <br>
+			
+			<label> Vos passions </label> <br>
+			<input type="checkbox" name="foot"> Foot <br>
+			<input type="checkbox" name="programmation"> Programmer <br>
+			<input type="checkbox" name="danse"> Danse <br>
+			<input type="checkbox" name="decouverte"> Decouverte <br>
+			
+			<label> Votre commentaire </label>
+			<textarea class="form-control" name="commentaire">Votre commentaire svp!</textarea> <br>
+			
+			<label> Votre pays </label>
+			<select class="form-control" name="pays">
+				<optgroup label="Afrique">
+					<option value="Bj"> Benin </option>
+				</optgroup>
+				<optgroup label="Inconnu">
+				<option> Monde </option>
+				<option> World </option>
+				</optgroup>
+				<optgroup label="Amerique">
+				<option> USA </option>
+				</optgroup>
+				<optgroup label="Europe">
+				<option> Italie </option>
+				</optgroup>
+				<optgroup label="Asie">
+				<option> Japon </option>
+				</optgroup>
+			</select> <br>
+			<div class="form-group text-center">
+				<button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-ok-sign"></span> Valider </button> 
+			</div>	
+		</form>
+	</body>
+	</html>
